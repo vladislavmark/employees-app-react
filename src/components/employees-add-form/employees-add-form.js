@@ -1,14 +1,16 @@
 import { Component } from 'react'; // для створення компонента через Class
-import './employees-add-form.css';
+// import './employees-add-form.css';
+import './employees-add-form.scss';
+
 
 class EmployeesAddForm extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            name: '',
-            salary: '',
-        }
+    // constructor(props) {
+    // super(props);
+    state = {
+        name: '',
+        salary: '',
     }
+    // }
 
     // return input text in value
     onChangeValue = (e) => {
